@@ -1,0 +1,306 @@
+@import "_nullstyle";
+@import "_adaptivFont";
+@import "_font";
+@import "_btn";
+
+//<Переменные>
+
+$minwidth: 320px;
+$mw: 1170px;
+$md1: $mw + 12;
+$md2: 992.98;
+$md3: 767.98;
+$md4: 479.98;
+
+//</Переменные>
+.wrapper {
+    max-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: $mw + px;
+    margin: 0 auto;
+    width: 100%;
+    @media (max-width: $md1+px) {
+        max-width: 970px;
+    }
+    @media (max-width: $md2+px) {
+        max-width: 750px;
+    }
+    @media (max-width: $md3+px) {
+        max-width: none;
+        padding: 0 10px;
+    }
+}
+
+/*--------navigation------------*/
+
+.wrapper {
+    overflow: hidden;
+}
+.navigation {
+    padding: 33px 0;
+}
+.container {
+    max-width: 880px;
+    margin: 0 auto;
+}
+.navigation-top {
+    justify-content: space-between;
+    display: flex;
+    &__order {
+        font-family: "AkzidenzGrotesk";
+        text-transform: uppercase;
+        span {
+            border-bottom: 2px solid #000;
+        }
+    }
+}
+.navigation-top-lang {
+    display: flex;
+    margin-bottom: 35px;
+    &__item {
+        font-family: "BebasNeue";
+        margin-right: 13px;
+        padding: 5px 6px;
+        &.active {
+            background: #000;
+            color: #fff;
+        }
+    }
+}
+.navigation-bottom {
+    display: flex;
+    justify-content: space-between;
+    &__column {
+        //flex: 0 0 33.333%;
+    }
+}
+.navigation-bottom-menu {
+}
+.navigation-bottom-menu-list {
+    display: flex;
+    &__link {
+        font-family: "AkzidenzGrotesk";
+        text-transform: uppercase;
+    }
+    &__link-right {
+        margin-right: 46px;
+    }
+    &__link-left {
+        margin-left: 46px;
+    }
+}
+
+.navigation-bottom-logo {
+    font-family: "BebasNeue";
+    text-align: center;
+    font-size: 10px;
+    margin-top: -52px;
+
+    &__logo1 {
+        letter-spacing: 5px;
+    }
+
+    &__logo2 {
+        margin: 14px 0 23px 0;
+    }
+    &__logo3 {
+        letter-spacing: 8px;
+    }
+}
+
+.navigation-bottom-logo1 {
+    font-family: "BebasNeue";
+}
+.navigation-bottom-logo2 {
+}
+.navigation-bottom-logo3 {
+    font-family: "BebasNeue";
+}
+
+/*--------private------------*/
+
+.private {
+    margin: 33px 0 75px 0;
+    display: flex;
+    &__column {
+        flex: 0 0 50%;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        background: url("../img/01.png") 0 0/100% 100% no-repeat;
+    }
+}
+.private-body {
+    padding: 82px 0 75px 62px;
+    background-color: #000;
+    color: #fff;
+    &__title {
+        font-family: "AkzidenzGrotesk";
+        font-size: 50px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-family: "PT Sans", sans-serif;
+        font-size: 15px;
+        line-height: 1.67;
+        margin: 35px 0 52px 0;
+    }
+}
+
+.private-body-buttons {
+    &__btn {
+        margin-right: 14px;
+    }
+
+    &__link {
+        font-family: "BebasNeue";
+        font-size: 15px;
+        line-height: 1.67;
+        letter-spacing: 1.5px;
+        color: #fffffe;
+        span {
+            border-bottom: 1px solid #fff;
+        }
+    }
+}
+
+.private-content {
+    width: 303px;
+}
+
+/*--------cards------------*/
+
+.cards {
+    margin-bottom: 49px;
+    &__row {
+        display: flex;
+    }
+
+    &__column {
+        flex: 0 0 25%;
+    }
+}
+
+.column-item {
+    &__img {
+    }
+}
+.column-item-body {
+    max-width: 185px;
+    &__title {
+        margin: 22px 0 23px 0;
+        font-size: 25px;
+        letter-spacing: 2.5px;
+        font-family: "AkzidenzGrotesk";
+        color: #000;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-family: "PT Sans", sans-serif;
+        font-size: 15px;
+        line-height: 1.67;
+    }
+}
+.column-item-body-buttoms {
+}
+.column-item-body-buttons {
+    &__btn {
+        margin: 27px 0 20px 0;
+    }
+
+    &__link {
+        font-family: "BebasNeue";
+        display: block;
+        font-size: 15px;
+        line-height: 1.67;
+        letter-spacing: 1.5px;
+        text-decoration: underline;
+    }
+}
+
+/*--------why------------*/
+.why {
+    background-color: #ebebeb;
+}
+
+.why-header {
+    background-color: #000;
+    margin-bottom: 50px;
+
+    &__row {
+        display: flex;
+    }
+    &__column {
+        flex: 0 0 50%;
+    }
+    &__title {
+        padding-right: 61px;
+        height: 100%;
+        display: flex;
+        font-family: "AkzidenzGrotesk";
+        font-size: 50px;
+        line-height: 0.5;
+        letter-spacing: 5px;
+        color: #fff;
+        text-transform: uppercase;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &__img {
+    }
+}
+.why-advantage {
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -14.5px;
+    }
+
+    &__column {
+        flex: 0 0 50%;
+        margin-bottom: 50px;
+        padding: 0 14.5px;
+    }
+}
+.column-why {
+    &__row {
+        display: flex;
+    }
+
+    &__img {
+        min-width: 100px;
+        height: 100px;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.column-why-body {
+    padding-left: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__title {
+        font-family: "AkzidenzGrotesk";
+        font-size: 25px;
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-size: 15px;
+        line-height: 1.67;
+    }
+}
+
+/*--------why------------*/

@@ -1,0 +1,15 @@
+.btn {
+    display: inline-block;
+    padding: 0 33px;
+    background-color: #000;
+    color: #fff;
+    line-height: 48px;
+    font-size: 15px;
+    font-family: "BebasNeue";
+    letter-spacing: 1.8px;
+
+    &--w {
+        color: #000;
+        background-color: #fff;
+    }
+}
